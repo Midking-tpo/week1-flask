@@ -74,8 +74,7 @@ venv内のPythonを直接指定して実行する。
 
 ## venv（仮想環境）とは
 
-### 一言で言うと
-**プロジェクトごとに独立したPythonの部屋を作る仕組み**
+プロジェクトごとに独立したPythonの部屋を作る
 
 **参考サイト**
 https://qiita.com/probabilityhill/items/18b6ac07df89b9859fa4
@@ -84,21 +83,21 @@ https://zenn.dev/techcareer/articles/python-venv-complete-guide
 
 ### なぜ必要か？
 
-venvなしだと、インストールしたライブラリが**Mac全体に影響する**。
+venvなしだと、インストールしたライブラリがMac全体に影響
 
 例えば：
-- アプリAはFlask 2.0が必要
-- アプリBはFlask 3.0が必要
+・アプリAはFlask 2.0が必要
+・アプリBはFlask 3.0が必要
 
-venvなしだと両立できない。どちらかしか入れられない。
+venvなしだと両立不可
 
-venvありだと：
+venv下
 
-Mac本体のPython（触らない）
+Mac本体のPython
 ├── アプリA/
-│   └── venv/  ← Flask 2.0が入ってる部屋
+│   └── venv/  ← Flask 2.0
 └── アプリB/
-└── venv/  ← Flask 3.0が入ってる部屋
+└── venv/  ← Flask 3.0
 
 それぞれの部屋に好きなバージョンを入れられる。
 
