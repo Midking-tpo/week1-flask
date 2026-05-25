@@ -1,8 +1,8 @@
 from flask import Flask, render_template
-//ここでFlaskと、render?_templateインポート
+# ここでFlaskと、render_templateインポート
 
 app = Flask(__name__)
-//Flaskクラスのインスタンスを作成、appという変数に代入
+# Flaskクラスのインスタンスを作成、appという変数に代入
 
 @app.route("/")
 def index():
